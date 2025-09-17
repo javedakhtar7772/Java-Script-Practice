@@ -41,9 +41,19 @@ obj.student1 = function(){
 console.log(obj.student1());
 */
 
+/**
+ * ! nested Object
+ 
 
+const object = {
+    email : "javedakhtar123@gmail.com",
+    fullname :{
+        userfullname: {
+            firstname : "Javed",
+            lastname : "Akhtar" 
+        }
+    }
+}
 
-
-
-
-
+console.log(object.fullname.userfullname.firstname);
+*/

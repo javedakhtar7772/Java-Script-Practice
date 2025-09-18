@@ -22,9 +22,9 @@ const user = {
     designation: "Software Engineer",
     intro:()=> {
         console.log(`I am ${user.username} My email is ${user.email} and I am working as ${user.designation}`);
-        let bag = "10cror rupees";
+        let bag = "10 cror rupees";
         const inner = () => {
-            console.log("I Am Inner Function");
+            console.log("I am Inner Function");
             console.log(bag);
         }
         return inner();
@@ -34,3 +34,10 @@ const user = {
 
 const x = user.intro();
 console.log("X:", x);
+
+/**
+ * ! Add a new key value pair, 
+ * ! Delete a key value pair(delete keyword)
+ * ! Update a value
+ * ! in keyword 
+*/

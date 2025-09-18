@@ -14,7 +14,7 @@ console.log(arr)
 
 /**
  * ! Object Methods
- */
+ 
 
 const user = {
     username: "Javed Akhtar",
@@ -34,10 +34,44 @@ const user = {
 
 const x = user.intro();
 console.log("X:", x);
-
+*/
 /**
  * ! Add a new key value pair, 
  * ! Delete a key value pair(delete keyword)
  * ! Update a value
  * ! in keyword 
 */
+
+/*
+const user = {
+    username: "Javed Akhtar",
+    email: "javedakhtar123@gmail.com",
+    designation: "Software Engineer",       
+    country: "India"
+}
+
+user.city = "Noida"; // Add a new key value pair
+
+delete user.country; // Delete a key value pair
+
+console.log("city" in user);
+console.log(user) // in keyword
+*/
+
+/**
+ * ! Shallow Copy
+*/
+ const user = {
+    username: "Javed Akhtar",
+    email: "javedakhtar123@gmail.com",
+    adderss: {
+        city: "Noida",
+        state: "Uttar Pradesh"          
+    }
+ }
+
+const ShallowCopy = {...user}
+
+user.username ="golu"
+user.adderss.city ="pratapgarh"
+console.log(ShallowCopy)
